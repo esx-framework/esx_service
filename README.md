@@ -1,20 +1,20 @@
-# esx_service
+<h1 align='center'>[ESX] Service</a></h1><p align='center'><b><a href='https://discord.esx-framework.org/'>Discord</a> - <a href='https://documentation.esx-framework.org/legacy/installation'>Documentation</a></b></h5>
 
 ## Download & Installation
 
 ### Using [fvm](https://github.com/qlaffont/fvm-installer)
 ```
-fvm install --save --folder=esx esx-org/esx_service
+fvm install --save --folder=esx esx-frameworkg/esx_service
 ```
 
 ### Using Git
 ```
 cd resources
-git clone https://github.com/ESX-Org/esx_service [esx]/esx_service
+git clone https://github.com/esx-framework/esx_service [esx]/esx_service
 ```
 
 ### Manually
-- Download https://github.com/ESX-Org/esx_service/archive/master.zip
+- Download https://github.com/esx-framework/esx_service/archive/master.zip
 - Put it in the `[esx]` directory
 
 ## Installation
@@ -45,7 +45,7 @@ TriggerServerEvent('esx_service:disableService', 'taxi')
 ### License
 esx_service - be in service
 
-Copyright (C) 2015-2022 Jérémie N'gadi
+Copyright (C) 2015-2023 Jérémie N'gadi
 
 This program Is free software: you can redistribute it And/Or modify it under the terms Of the GNU General Public License As published by the Free Software Foundation, either version 3 Of the License, Or (at your option) any later version.
 
