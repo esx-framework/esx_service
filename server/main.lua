@@ -22,8 +22,11 @@ end)
 
 RegisterServerEvent('esx_service:disableService')
 AddEventHandler('esx_service:disableService', function(name)
+	local source = source
 	InService[name][source] = nil
 	GlobalState[name] = GetInServiceCount(name)
+	Player(source).state:set('onduty', false, true)	
+	TriggerClientEvent('esx:showNotification', source, "Vous n'êtes plus en service") -- Need to add translation system
 end)
 
 RegisterServerEvent('esx_service:notifyAllInService')
@@ -43,6 +46,8 @@ ESX.RegisterServerCallback('esx_service:enableService', function(source, cb, nam
 	else
 		InService[name][source] = true
 		GlobalState[name] = GetInServiceCount(name)
+		Player(source).state:set('onduty', true, true)
+		--TriggerClientEvent('esx:showNotification', source, "Vous avez pris votre service") -- Need to add translation system
 		cb(true, MaxInService[name], inServiceCount)		
 	end
 end)
