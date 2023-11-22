@@ -40,7 +40,7 @@ end)
 
 ESX.RegisterServerCallback('esx_service:enableService', function(source, cb, name)
 	local inServiceCount = GetInServiceCount(name)
-	
+	local source = source
 	if inServiceCount >= MaxInService[name] then
 		cb(false, MaxInService[name], inServiceCount)
 	else
