@@ -2,7 +2,7 @@ fx_version 'adamant'
 
 game 'gta5'
 lua54 'yes'
-description 'ESX Service'
+description 'A basic duty system for Jobs'
 
 version '1.0'
 legacyversion '1.9.1'
